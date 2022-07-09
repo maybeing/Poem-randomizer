@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+* {
+  background-color: #e6dcd4;
+}
+
+/* HEADER */
+.header {
+  text-align: right;
+  background-color: #bda18c;
+  padding: 20px;
+  color: #e6dcd4;
+}
+
+.material-icons {
+  font-size: 34px !important;
+  background-color: #bda18c;
+  margin-right: 25px;
+}
+
+
+/*CONTEUDO */
+.conteudo {
+  text-align: center;
+  background-color: #e6dcd4;
+  color: #3f352d;
+}
+
+
+h1 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 100;
+}
+
+h1, p {
+    animation: fadeIn 3s;
+}
+
+.highlight {
+  display: inline-block;
+  background-color: #bda18c;
+  color: #e6dcd4;
+  font-weight: 400;
+  padding: 3px;
+}
+
+#highlight2 {
+  font-size: 15px;
+  border: 1px dotted; padding: 3px; border-radius: 8px;
+  display: inline-block;
+  font-weight: 400;
+  animation: none;
+
+}

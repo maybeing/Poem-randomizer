@@ -9,32 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.clodflare.com/ajax/libs/html2canvas/0.4.1/tml2canvas.min.j"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
   </head>
 
+  <script type="text/javascript">
+
+  function random_item(items)
+  {
+  return items[Math.floor(Math.random()*items.length)];
+  }
+
+  var items = [
+    "Só se vê bem com o coração, o essencial é invisível aos olhos. (O Pequeno Príncipe, Antoine de Saint-Exupéry)", "Quando acordei hoje de manhã, eu sabia quem eu era, mas acho que já mudei muitas vezes desde então. (Alice no País das maravilhas, Lewis Carroll)", "A vida é uma tempestade (...) Um dia você está tomando sol e no dia seguinte o mar te lança contra as rochas. O que faz de você um homem é o que você faz quando a tempestade vem. (O Conde de Monte Cristo, Alexandre Dumas)", "As coisas têm vida própria. Tudo é questão de despertar a sua alma. (Cem Anos de Solidão, Gabriel García Márquez)", "Por você, faria isso mil vezes. (O caçador de Pipas, Khaled Hosseini)", "Tudo depende do tipo de lente que você utiliza para ver as coisas. (O Mundo de Sofia, Jostein Gaarder)", "Palavras são, na minha não tão humilde opinião, nossa inesgotável fonte de magia. Capazes de ferir e de curar. (Harry Potter e as Relíquias da Morte, J.K. Rowling)", "Quando os pés estão corretos, todo o resto nos acompanha. (As Crônicas de Nárnia: O leão, a feiticeira e o guarda-roupa, C. S. Lewis)", "O amor é a força mais poderosa do universo e quando duas pessoas se amam, nem a distância nem o tempo podem separá-las. (O Melhor de Mim, Nicholas Sparks)"];
+
+  function aleatorio() {
+    document.getElementById("poema").innerHTML = random_item(items);
+  }
+
+  </script>
 
   <body>
+
     <div class="header">
       <i class="material-icons">cloud</i>
       <i class="material-icons">favorite</i>
     </div>
 
 
-    <div class="conteudo">
-      <br><br><br><br>
+    <div class="conteudo" class="trecho">
 
-      <h1>Texto</h1>
-      <br><br>
+    <h1>Aleatorizador de trechos literários </h1>
+    <p><span class="material-symbols-outlined" id="icone_salvar" onclick="salvar()"></span></p>
 
-      <p>Texto texto texto texto texto texto texto</p>
-      <p class="highlight">Texto texto texto texto texto texto texto</p>
-      <p>Texto texto texto texto texto texto texto</p>
+    <p id="poema"></p>
 
-      <br><br><br>
-      <br><br><br>
+    <input type="button" name="" value="novo trecho" id="highlight2" class="btn btn-danger" onclick="aleatorio()">
 
-      <p id="highlight2">Texto texto texto</p>
     </div>
-  </body>
 
+
+  </body>
 
 </html>

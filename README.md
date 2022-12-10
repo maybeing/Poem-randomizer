@@ -6,9 +6,9 @@ Features:
 
 ☑ Light theme
 
-☐ Dark theme
+☑ Dark theme
 
-☐ Randomizer button
+☑ Randomizer button
 
 ☐ 20+ Poems
 

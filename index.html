@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Dark/Light Mode Pattern</title>
+<link rel="stylesheet" href="style.css">
+<link id="favicon" rel="icon" href="favicon-dark.svg" color="#DDD" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.clodflare.com/ajax/libs/html2canvas/0.4.1/tml2canvas.min.j"></script>
+<script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+</head>
+<body class="dark">
+
+
+
+<script type="text/javascript">
+
+function random_item(items)
+{
+return items[Math.floor(Math.random()*items.length)];
+}
+
+var items = [
+	"Só se vê bem com o coração, o essencial é invisível aos olhos. (O Pequeno Príncipe, Antoine de Saint-Exupéry)", "Quando acordei hoje de manhã, eu sabia quem eu era, mas acho que já mudei muitas vezes desde então. (Alice no País das maravilhas, Lewis Carroll)", "A vida é uma tempestade (...) Um dia você está tomando sol e no dia seguinte o mar te lança contra as rochas. O que faz de você um homem é o que você faz quando a tempestade vem. (O Conde de Monte Cristo, Alexandre Dumas)", "As coisas têm vida própria. Tudo é questão de despertar a sua alma. (Cem Anos de Solidão, Gabriel García Márquez)", "Por você, faria isso mil vezes. (O caçador de Pipas, Khaled Hosseini)", "Tudo depende do tipo de lente que você utiliza para ver as coisas. (O Mundo de Sofia, Jostein Gaarder)", "Palavras são, na minha não tão humilde opinião, nossa inesgotável fonte de magia. Capazes de ferir e de curar. (Harry Potter e as Relíquias da Morte, J.K. Rowling)", "Quando os pés estão corretos, todo o resto nos acompanha. (As Crônicas de Nárnia: O leão, a feiticeira e o guarda-roupa, C. S. Lewis)", "O amor é a força mais poderosa do universo e quando duas pessoas se amam, nem a distância nem o tempo podem separá-las. (O Melhor de Mim, Nicholas Sparks)"];
+
+function aleatorio() {
+	document.getElementById("poema").innerHTML = random_item(items);
+}
+
+</script>
+
+
+
+
+
+	<div class="load-flash"></div>
+
+	<div class="header">
+
+		<div class="mode-toggle noselect">
+
+			<div class="toggle-switch"></div>
+
+		</div>
+
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+
+
+	<div class="container p-3 conteudo" class="trecho">
+
+	<h1>Aleatorizador de trechos literários </h1>
+
+	<p id="poema"></p>
+
+	<input type="button" name="" value="novo trecho" id="highlight2" class="btn btn-light" onclick="aleatorio()">
+
+	</div>
+
+</body>
+</html>

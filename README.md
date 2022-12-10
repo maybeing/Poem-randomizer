@@ -1,5 +1,7 @@
-# Poem-randomizer
-A light academia themed website that randomly chooses an existing book excerpt.
+<h2 align="center">Poem-randomizer</h2>
+
+<h3 align="center">A light academia themed website that randomly chooses an existing book excerpt.</h3>
+<h3 align="center">https://maybeing.github.io/Poem-randomizer/</h3>
 
 
 Features:
